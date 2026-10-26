@@ -1,0 +1,2559 @@
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'html' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ html--front.html.twig
+   ▪️ html--node--1.html.twig
+   ▪️ html--node--%.html.twig
+   ▪️ html--node.html.twig
+   ✅ html.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/system/html.html.twig' -->
+<!DOCTYPE html>
+<html lang="it" dir="ltr" prefix="og: https://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8" />
+<meta name="cactus" content="project=Cactus;environment=prod;version=1.9.3" />
+<style id="18bb86c2-c784-44ef-b004-194762600de8" class="cactus-themer" data-theme-title="Default Theme">:root{--theme-primary:#0066CC; --theme-secondary:#0059B3; --theme-tertiary:#003366; --theme-quaternary:#1B548E; --theme-text-primary:#1A1A1A; --theme-text-secondary:#FFFFFF; --theme-text-tertiary:#5C6F82; --theme-text-accent:#17324D; --theme-text-hover:#2F475E; --theme-text-active:#003063; --theme-bg-primary:#001A33; --theme-bg-secondary:#0066CC; --theme-bg-tertiary:#FFFFFF; --theme-bg-accent:#F0F6FC; --theme-ff-family:sans-serif; --theme-ff-size:100%; --theme-h1:64px; --theme-h2:56px; --theme-h3:40px; --theme-h4:32px; --theme-h5:28px; --theme-h6:24px; --theme-h1mob:42px; --theme-h2mob:40px; --theme-h3mob:30px; --theme-h4mob:28px; --theme-h5mob:24px; --theme-h6mob:22px; }</style>
+<meta name="description" content="L&#039;attivazione del Login eIDAS garantisce un accesso sicuro ai servizi dell&#039;UE, fornendo interoperabilità, sicurezza e fiducia con un&#039;unica identità digitale." />
+<link rel="shortlink" href="eidas-node.html" />
+<link rel="canonical" href="eidas-node.html" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="https://www.eid.gov.it/sites/agid/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="it" href="eidas-node.html" />
+<link rel="alternate" hreflang="en" href="https://www.eid.gov.it/en" />
+
+    <title>Login eIDAS: accesso sicuro ai servizi pubblici in UE</title>
+    <link rel="stylesheet" media="all" href="https://www.eid.gov.it/modules/contrib/ckeditor5_tags/css/tags.lib.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/align.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/fieldgroup.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/container-inline.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/clearfix.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/details.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/hidden.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/item-list.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/js.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/nowrap.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/position-container.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/reset-appearance.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/resize.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/system-status-counter.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/system-status-report-counters.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/system-status-report-general-info.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/system/css/components/tablesort.module.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/filter/css/filter.caption.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/core/modules/media/css/filter.caption.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/modules/contrib/paragraphs/css/paragraphs.unpublished.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/modules/custom/cactus_backend/static/css/frontend.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/modules/custom/cactus_backend/static/css/global.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/modules/custom/cactus_backend/static/css/pager.css?tlgc0i" />
+<link rel="stylesheet" media="all" href="https://www.eid.gov.it/themes/agid_theme/app/dist/bundle.min.css?tlgc0i" />
+
+    
+    <!-- Injection ID "26a927ef-b208-4657-baab-8d7650b0f5ae"-->
+<script type="application/json" data-config-endpoints>{"stats-eid": {"out":"https://sp-proxy.eid.gov.it", "in":"https://idp-proxy.eid.gov.it"}}</script>
+
+  </head>
+  <body class="path-frontpage node--type-contents">
+  <nav aria-label="menu di salto di blocco">
+    <a href="eidas-node.html#main-content" class="visually-hidden focusable skip-link">
+        Salta al contenuto principale
+    </a>
+  </nav>
+    
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'off_canvas_page_wrapper' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'page' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ page--front.html.twig
+   ▪️ page--node--1.html.twig
+   ▪️ page--node--%.html.twig
+   ▪️ page--node.html.twig
+   ✅ page.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/system/page.html.twig' -->
+<div id="page-wrapper">
+  <div id="page">
+          <section class="edit_tools">
+          <div id="header-on-top" class="header-on-top">
+    <div class="top">
+      <div class="content-wrapper">
+        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ region--top.html.twig
+   ✅ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region.html.twig' -->
+  <section class="region region-top">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--agid-theme-site-block-top-header-link.html.twig
+   ▪️ block--entity-block--site-setting-entity.html.twig
+   ▪️ block--entity-block.html.twig
+   ▪️ block--entity-block.html.twig
+   ✅ block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+<div id="block-agid-theme-site-block-top-header-link">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'site_setting_entity' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ site-setting-entity--11--default.html.twig
+   ▪️ site-setting-entity--11.html.twig
+   ▪️ site-setting-entity--block-text--default.html.twig
+   ✅ site-setting-entity--block-text.html.twig
+   ▪️ site-setting-entity--default.html.twig
+   ▪️ site-setting-entity.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--block-text.html.twig' -->
+<div class="site_setting_entity block-text">
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--site-setting-entity--description--block-text.html.twig
+   ▪️ field--site-setting-entity--description.html.twig
+   ▪️ field--site-setting-entity--block-text.html.twig
+   ▪️ field--description.html.twig
+   ▪️ field--string.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-description field--type-string field--label-hidden field__item">HEADER TOP LINK</div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--site-setting-entity--field-description--block-text.html.twig
+   ▪️ field--site-setting-entity--field-description.html.twig
+   ▪️ field--site-setting-entity--block-text.html.twig
+   ▪️ field--field-description.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+      <div class="field field--name-field-description field--type-text-long field--label-hidden field__items">
+              <div class="field__item"><p><a href="https://www.agid.gov.it/it" target="_blank">Agenzia per l'Italia Digitale</a></p></div>
+          </div>
+  
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--block-text.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--agid-theme-languageswitcher.html.twig
+   ▪️ block--language-block--language-interface.html.twig
+   ▪️ block--language-block.html.twig
+   ▪️ block--language.html.twig
+   ✅ block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+<div class="language-switcher-language-url" id="block-agid-theme-languageswitcher" role="navigation">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'links__language_block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ links--language-block.html.twig
+   ✅ links--language-block.html.twig
+   ▪️ links.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/links/links--language-block.html.twig' -->
+
+  <div class="language-dropdown">
+    <div class="links-item-lang d-none">
+      <ul class="links">
+                  <li hreflang="it" data-drupal-link-system-path="&lt;front&gt;" class="it is-active" data-text="Ita" aria-current="page">
+            <a href="eidas-node.html" class="language-link is-active" hreflang="it" data-drupal-link-system-path="&lt;front&gt;" aria-current="page">Ita</a>
+          </li>
+                  <li hreflang="en" data-drupal-link-system-path="&lt;front&gt;" class="en" data-text="Eng">
+            <a href="https://www.eid.gov.it/en" class="language-link" hreflang="en" data-drupal-link-system-path="&lt;front&gt;">Eng</a>
+          </li>
+              </ul>
+    </div>
+    <div data-select-up-search class="select-container">
+      <label for="language-select" class="d-none">Language Select</label>
+      <select data-not-init name="Language" id="language-select">
+      </select>
+    </div>
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/links/links--language-block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+
+
+  </section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region.html.twig' -->
+
+
+      </div>
+    </div>
+  </div>
+      </section>
+          <header id="header" class="header">
+    <div class="menu-mobile-sidebar" tabindex="-1" role="navigation" aria-label="menu di navigazione di primo livello" id="block-menu-mobile">
+      <div class="focus-restart-logo" role="button" tabindex="-1"></div>
+      <div class="top">
+        <button tabindex="-1" aria-label="Chiudi menu" class="close" aria-controls="block-menu-mobile" aria-haspopup="menu">
+          <div class="icon"></div>
+                                                          <span class="text">
+                Chiudi
+              </span>
+                              </button>
+                  <a tabindex="-1" class="logo" href="eidas-node.html"
+             aria-label="Vai alla homepage">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--full.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--full.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/logo_mobilesticky.svg" alt="Logo Il nodo eiDAS italiano" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+          </a>
+              </div>
+              <div class="pages">
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ region--primary-menu.html.twig
+   ✅ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region.html.twig' -->
+  <section class="region region-primary-menu">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--agid-theme-navigazioneprincipale.html.twig
+   ▪️ block--system-menu-block--main.html.twig
+   ✅ block--system-menu-block.html.twig
+   ▪️ block--system.html.twig
+   ▪️ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/block/block--system-menu-block.html.twig' -->
+
+<div  id="block-agid-theme-navigazioneprincipale">
+      
+  
+
+        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__main' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ menu--main.html.twig
+   ✅ menu--main.html.twig
+   ▪️ menu.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/menus/menu--main.html.twig' -->
+
+    
+
+
+<section class="main-menu">
+          <div class="nav navbar-nav">
+      <ul class="page-list" role="menu">
+                            <li role="menuitem">
+                                                                                                <a href="https://www.eid.gov.it/it/nodo-eidas" class="nav-link" data-text="Il Nodo eIDAS" data-drupal-link-system-path="node/3">Il Nodo eIDAS</a>
+            
+          </li>
+                            <li role="menuitem">
+                                                                                                <a href="https://www.eid.gov.it/it/rete-eidas" class="nav-link" data-text="La rete eIDAS" data-drupal-link-system-path="node/4">La rete eIDAS</a>
+            
+          </li>
+                            <li role="menuitem">
+                                                                                                <a href="https://www.eid.gov.it/it/abilita-eidas" class="nav-link" data-text="Abilita Login eIDAS" data-drupal-link-system-path="node/5">Abilita Login eIDAS</a>
+            
+          </li>
+                            <li role="menuitem">
+                                                                                                <a href="https://www.eid.gov.it/it/info-connection-eu" class="nav-link" data-text="EU Info Connection" data-drupal-link-system-path="node/6">EU Info Connection</a>
+            
+          </li>
+              </ul>
+                                                                                                  </div>
+  
+</section>
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/menus/menu--main.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/block/block--system-menu-block.html.twig' -->
+
+
+  </section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region.html.twig' -->
+
+
+        </div>
+            <div class="focus-restart" role="button" tabindex="-1"></div>
+    </div>
+    <div class="content">
+      <div class="content-wrapper">
+        <button aria-label="Apri Menu" class="mobile-menu-btn" aria-controls="block-menu-mobile" aria-haspopup="menu"
+                aria-expanded="false">
+        </button>
+        <div class="logo-part">
+          <a class="logo desktop" href="eidas-node.html" aria-label="Vai alla homepage">
+            <img src="https://www.eid.gov.it/sites/agid/files/2024-06/Frame%201000015271.svg" alt="Logo Il nodo eiDAS italiano">
+          </a>
+                      <a class="logo mobile" href="eidas-node.html"
+               aria-label="Vai alla homepage">
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--full.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--full.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/logo_mobilesticky.svg" alt="Logo Il nodo eiDAS italiano" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+            </a>
+                                                              </div>
+        <div class="content inner">
+                      <div class="pages">
+              <div class="pages-wrapper">
+                                  <a class="logo" href="eidas-node.html"
+                     aria-label="Vai alla homepage">
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--full.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--full.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/logo_mobilesticky.svg" alt="Logo Il nodo eiDAS italiano" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+                  </a>
+                                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ region--primary-menu.html.twig
+   ✅ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region.html.twig' -->
+  <section class="region region-primary-menu">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--agid-theme-navigazioneprincipale.html.twig
+   ▪️ block--system-menu-block--main.html.twig
+   ✅ block--system-menu-block.html.twig
+   ▪️ block--system.html.twig
+   ▪️ block.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/block/block--system-menu-block.html.twig' -->
+
+<div  id="block-agid-theme-navigazioneprincipale--2">
+      
+  
+
+        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__main' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ menu--main.html.twig
+   ✅ menu--main.html.twig
+   ▪️ menu.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/menus/menu--main.html.twig' -->
+
+    
+
+
+<section class="main-menu">
+          <div class="nav navbar-nav">
+      <ul class="page-list" role="menu">
+                            <li role="menuitem">
+                                                                                                <a href="https://www.eid.gov.it/it/nodo-eidas" class="nav-link" data-text="Il Nodo eIDAS" data-drupal-link-system-path="node/3">Il Nodo eIDAS</a>
+            
+          </li>
+                            <li role="menuitem">
+                                                                                                <a href="https://www.eid.gov.it/it/rete-eidas" class="nav-link" data-text="La rete eIDAS" data-drupal-link-system-path="node/4">La rete eIDAS</a>
+            
+          </li>
+                            <li role="menuitem">
+                                                                                                <a href="https://www.eid.gov.it/it/abilita-eidas" class="nav-link" data-text="Abilita Login eIDAS" data-drupal-link-system-path="node/5">Abilita Login eIDAS</a>
+            
+          </li>
+                            <li role="menuitem">
+                                                                                                <a href="https://www.eid.gov.it/it/info-connection-eu" class="nav-link" data-text="EU Info Connection" data-drupal-link-system-path="node/6">EU Info Connection</a>
+            
+          </li>
+              </ul>
+                                                                                                  </div>
+  
+</section>
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/menus/menu--main.html.twig' -->
+
+
+  </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/block/block--system-menu-block.html.twig' -->
+
+
+  </section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region.html.twig' -->
+
+
+                              </div>
+            </div>
+                    
+        </div>
+      </div>
+    </div>
+  </header>
+        <div id="main-wrapper" class="clearfix">
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ region--breadcrumb.html.twig
+   ✅ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region.html.twig' -->
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region.html.twig' -->
+
+
+        <main>
+          <section class="section">
+            <a id="main-content" tabindex="-1" class="d-none"></a>
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ region--content.html.twig
+   ✅ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region.html.twig' -->
+  <section class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ node--1--full.html.twig
+   ▪️ node--1.html.twig
+   ▪️ node--contents--full.html.twig
+   ▪️ node--contents.html.twig
+   ▪️ node--full.html.twig
+   ✅ node.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/nodes/node.html.twig' -->
+<article class="node node--type-contents node--promoted node--view-mode-full clearfix">
+  
+  
+  <div class="node__content clearfix">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'links__node' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ links--node.html.twig
+   ✅ links.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/links.html.twig' -->
+
+<!-- END OUTPUT from 'core/modules/system/templates/links.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--node--field-components--contents.html.twig
+   ▪️ field--node--field-components.html.twig
+   ▪️ field--node--contents.html.twig
+   ▪️ field--field-components.html.twig
+   ✅ field--entity-reference-revisions.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--entity-reference-revisions.html.twig' -->
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--hero-banner--default.html.twig
+   ✅ paragraph--hero-banner.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--hero-banner.html.twig' -->
+
+
+
+
+  <div data-themer-uuid="themer-3eaafea1-c4d3-4448-a133-f7f61e71961b" class="paragraph paragraph--type--hero-banner paragraph--view-mode--default component hero-banner"
+    style="background-color: rgba(255, 255, 255, 0); ">
+    
+      
+
+      <div class="gradient"></div>
+
+      <div class="content-wrapper">
+                  <div class='background-image  desktop'>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--default.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--default.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/BannerSemplice%20SVG.svg" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+</div>
+        
+                  <div class="background-image tablet">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--default.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--default.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/tablet.png" width="768" height="481" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+</div>
+        
+                  <div class="background-image mobile">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--default.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--default.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/bannermobile.png" width="375" height="690" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+</div>
+        
+        <div class="text-wrapper">
+          
+
+          <div class="text-container">
+                          <div class="overtitle">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-surtitle--hero-banner.html.twig
+   ▪️ field--paragraph--field-surtitle.html.twig
+   ▪️ field--paragraph--hero-banner.html.twig
+   ▪️ field--field-surtitle.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-surtitle field--type-text-long field--label-hidden field__item"><p>Il portale italiano che racconta</p></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+                        <div class="title">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-title--hero-banner.html.twig
+   ▪️ field--paragraph--field-title.html.twig
+   ▪️ field--paragraph--hero-banner.html.twig
+   ▪️ field--field-title.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><h1>il Login eIDAS</h1></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+            <div class="description">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-description--hero-banner.html.twig
+   ▪️ field--paragraph--field-description.html.twig
+   ▪️ field--paragraph--hero-banner.html.twig
+   ▪️ field--field-description.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-description field--type-text-long field--label-hidden field__item"><p>Il nodo eIDAS consente l’<strong>interoperabilità transfrontaliera delle identità digitali</strong> e permette a tutti i cittadini europei di accedere ai servizi online degli Stati membri tramite la propria identità digitale nazionale.</p><p>Questa <strong>piattaforma descrive il meccanismo di funzionamento dell’autenticazione transfrontaliera e contiene informazioni e indicazioni sulle procedure tecniche e amministrative</strong> da seguire per implementarla connettendosi al nodo eIDAS italiano, così come prevede la regolamentazione europea.</p></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+                          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-link--hero-banner.html.twig
+   ▪️ field--paragraph--field-link.html.twig
+   ▪️ field--paragraph--hero-banner.html.twig
+   ✅ field--field-link.html.twig
+   ▪️ field--link.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-link.html.twig' -->
+            
+  
+  <a target="_self"  class="link-arrow " href="https://www.eid.gov.it/it/nodo-eidas">
+    TUTTO QUELLO CHE C’È DA SAPERE SU eIDAS
+      </a>
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-link.html.twig' -->
+
+
+                      </div>
+        </div>
+      </div>
+
+      </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--hero-banner.html.twig' -->
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--index--default.html.twig
+   ✅ paragraph--index.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--index.html.twig' -->
+    
+    
+  <div class="paragraph paragraph--type--index paragraph--view-mode--default margin_top_9 margin_bottom_10 margin_top_6_mob margin_bottom_10_mob component index-banner" style="">
+          
+
+      <div class="content-wrapper">
+        <div class="title-banner mobile">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-title--index.html.twig
+   ▪️ field--paragraph--field-title.html.twig
+   ▪️ field--paragraph--index.html.twig
+   ▪️ field--field-title.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><p>Indice</p></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+        <div class="index-wrapper">
+          <div class="title-banner">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-title--index.html.twig
+   ▪️ field--paragraph--field-title.html.twig
+   ▪️ field--paragraph--index.html.twig
+   ▪️ field--field-title.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><p>Indice</p></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+          <nav class="wrapper-options" aria-label=navigazione secondaria della sidebar>
+            <ul class="options">
+                                                                                              
+                                  <li class="option active">
+                    <a href="eidas-node.html#index-0" role="tab">
+                      Perché è importante eIDAS
+                    </a>
+                  </li>
+                                                                                                                  
+                                                                                                
+                                                                                                
+                                  <li class="option ">
+                    <a href="eidas-node.html#index-1" role="tab">
+                      Il Regolamento eIDAS e eIDAS 2.0
+                    </a>
+                  </li>
+                                                                                                                  
+                                                                                                
+                                                                                                
+                                  <li class="option ">
+                    <a href="eidas-node.html#index-2" role="tab">
+                      Come effettuare il login eIDAS
+                    </a>
+                  </li>
+                                                                                                                  
+                                          </ul>
+          </nav>
+
+          <div data-select-up-search class="select-dropdown" aria-label=navigazione secondaria>
+            <select data-select-search name="index-select" id="index-select" class="select">
+                                                                                                                                <option value="index-0" title="Perché è importante eIDAS">Perché è importante eIDAS</option>
+                                                                                                                                                                                                                                                                                                                                                    <option value="index-1" title="Il Regolamento eIDAS e eIDAS 2.0">Il Regolamento eIDAS e eIDAS 2.0</option>
+                                                                                                                                                                                                                                                                                                                                                    <option value="index-2" title="Come effettuare il login eIDAS">Come effettuare il login eIDAS</option>
+                                                                                                                                                            </select>
+          </div>
+        </div>
+
+        <div class="content">
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-item-list--index.html.twig
+   ▪️ field--paragraph--field-item-list.html.twig
+   ▪️ field--paragraph--index.html.twig
+   ▪️ field--field-item-list.html.twig
+   ✅ field--entity-reference-revisions.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--entity-reference-revisions.html.twig' -->
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--bookmark--default.html.twig
+   ✅ paragraph--bookmark.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--bookmark.html.twig' -->
+    <div class="paragraph paragraph--type--bookmark paragraph--view-mode--default component bookmark">
+                    
+
+          <div class="d-none">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-title--bookmark.html.twig
+   ▪️ field--paragraph--field-title.html.twig
+   ▪️ field--paragraph--bookmark.html.twig
+   ▪️ field--field-title.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><p>Perché è importante eIDAS</p>
+</div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+            </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--bookmark.html.twig' -->
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--title--default.html.twig
+   ✅ paragraph--title.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--title.html.twig' -->
+
+
+
+  <div data-themer-uuid="themer-345ae006-4056-46c3-b31d-d95651db5f1f" class="paragraph paragraph--type--title paragraph--view-mode--default component title-description" style="">
+          
+      
+
+      <div class="content-wrapper">
+                  <div class="title primary">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-title--title.html.twig
+   ▪️ field--paragraph--field-title.html.twig
+   ▪️ field--paragraph--title.html.twig
+   ▪️ field--field-title.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><h2>Perché è importante eIDAS</h2></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+        
+                  <div class="description-container">
+                          <div class="description">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-description--title.html.twig
+   ▪️ field--paragraph--field-description.html.twig
+   ▪️ field--paragraph--title.html.twig
+   ▪️ field--field-description.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-description field--type-text-long field--label-hidden field__item"><p>Attraverso il Login eIDAS, le Amministrazioni garantiscono a cittadini e imprese la possibilità di <strong>fruire dei servizi pubblici online in tutta l’UE con la propria identità digitale.</strong></p><p>Il nodo eIDAS italiano consente che l’identità digitale di uno Stato membro possa essere utilizzata per accedere ai servizi online della pubblica amministrazione di un altro Stato membro.</p></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+            
+            
+                      </div>
+              </div>
+
+      </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--title.html.twig' -->
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--icon-text-list--default.html.twig
+   ✅ paragraph--icon-text-list.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--icon-text-list.html.twig' -->
+    
+    
+
+  
+    <div data-themer-uuid="themer-82524c34-e177-4fdb-b1c9-b73e1a46f009" class="paragraph paragraph--type--icon-text-list paragraph--view-mode--default margin_top_5 margin_top_5_mob padding_top_0_mob component icon-text-list data-monitoring-page" style="">
+                  
+          
+
+        <div class="content-wrapper">
+          <div class="title primary">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-title--icon-text-list.html.twig
+   ▪️ field--paragraph--field-title.html.twig
+   ▪️ field--paragraph--icon-text-list.html.twig
+   ▪️ field--field-title.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><h3>Quali sono le sue caratteristiche</h3></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+          <div class="description">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-subtitle--icon-text-list.html.twig
+   ▪️ field--paragraph--field-subtitle.html.twig
+   ▪️ field--paragraph--icon-text-list.html.twig
+   ▪️ field--field-subtitle.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-subtitle field--type-text-long field--label-hidden field__item"><p>Le caratteristiche del nodo eIDAS sono 3:</p></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+          <div class="items-wrapper">
+
+                                                                                    <div class="item-wrapper">
+                <div class="text-title"><p>Assicura interoperabilità</p></div>
+                <div class="icon-text-item">
+                  <div class="icon">
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--loadByUuid.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--loadByUuid.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/TI1.svg" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+                                      </div>
+                  <div class="text">
+                    <div class="text-title"><p>Assicura interoperabilità</p></div>
+                    <div class="description"><p>Persone e imprese possono utilizzare l'eID nazionale e accedere ai servizi pubblici in altri paesi dell’UE. In due parole: comodo e pratico.</p></div>
+                  </div>
+                </div>
+              </div>
+                                                                                    <div class="item-wrapper">
+                <div class="text-title"><p>Garantisce sicurezza</p></div>
+                <div class="icon-text-item">
+                  <div class="icon">
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--loadByUuid.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--loadByUuid.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/TI2.svg" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+                                      </div>
+                  <div class="text">
+                    <div class="text-title"><p>Garantisce sicurezza</p></div>
+                    <div class="description"><p>Meno rischi di furto d’identità o di uso improprio di informazioni personali grazie ai livelli elevati di sicurezza dei sistemi. La privacy è assicurata.</p></div>
+                  </div>
+                </div>
+              </div>
+                                                                                    <div class="item-wrapper">
+                <div class="text-title"><p>Trasmette fiducia</p></div>
+                <div class="icon-text-item">
+                  <div class="icon">
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--loadByUuid.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--loadByUuid.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/TI3.svg" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+                                      </div>
+                  <div class="text">
+                    <div class="text-title"><p>Trasmette fiducia</p></div>
+                    <div class="description"><p>Le transazioni effettuate fuori dai confini nazionali con il Login eIDAS hanno validità legale e lo stesso status giuridico dei processi tradizionali su carta, a prescindere dal device utilizzato. Nessun problema indipendentemente da dove ci si trovi.</p></div>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+
+            </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--icon-text-list.html.twig' -->
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--bookmark--default.html.twig
+   ✅ paragraph--bookmark.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--bookmark.html.twig' -->
+    <div class="paragraph paragraph--type--bookmark paragraph--view-mode--default component bookmark">
+                    
+
+          <div class="d-none">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-title--bookmark.html.twig
+   ▪️ field--paragraph--field-title.html.twig
+   ▪️ field--paragraph--bookmark.html.twig
+   ▪️ field--field-title.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><p>Il Regolamento eIDAS e eIDAS 2.0</p>
+</div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+            </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--bookmark.html.twig' -->
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--article-item-list--default.html.twig
+   ✅ paragraph--article-item-list.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--article-item-list.html.twig' -->
+    
+    
+  <div data-themer-uuid="themer-e87fcf6b-5d75-48b6-a10e-207290a294fa" class="paragraph paragraph--type--article-item-list paragraph--view-mode--default margin_top_10 margin_top_10_mob component article-item-list" style="">
+          
+      
+
+      <div class="content-wrapper">
+                  <div class="title primary">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-title--article-item-list.html.twig
+   ▪️ field--paragraph--field-title.html.twig
+   ▪️ field--paragraph--article-item-list.html.twig
+   ▪️ field--field-title.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><h2>Il Regolamento eIDAS e eIDAS 2.0</h2></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+                          <div class="description">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-description--article-item-list.html.twig
+   ▪️ field--paragraph--field-description.html.twig
+   ▪️ field--paragraph--article-item-list.html.twig
+   ▪️ field--field-description.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-description field--type-text-long field--label-hidden field__item"><p>Il <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG" target="blank">Regolamento sull’identificazione elettronica e i servizi fiduciari per le transazioni elettroniche nel mercato interno</a> o, più semplicemente, Regolamento eIDAS (electronic IDentification Authentication and Signature), aiuta le imprese, i cittadini e le autorità pubbliche ad avere interazioni elettroniche sicure.</p><p>Il Regolamento eIDAS è fondamentale perché:</p></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+        
+        <div class="list">
+                                                            
+                          <div class="item">
+                <div class="arrow">
+                  <div class="icon"></div>
+                </div>
+                <div class="text">
+                                      <div class="title"><p>permette l’accesso ai servizi con la propria identità digitale.</p>
+                                          </div>
+                                    <div class="description"><p>Persone e imprese possono utilizzare i sistemi nazionali di identificazione elettronica (eID) per accedere ai servizi pubblici online di altri Paesi dell’Unione Europea.</p></div>
+                </div>
+              </div>
+                                                                        
+                          <div class="item">
+                <div class="arrow">
+                  <div class="icon"></div>
+                </div>
+                <div class="text">
+                                      <div class="title"><p>crea un mercato interno europeo dei servizi fiduciari.</p>
+                                          </div>
+                                    <div class="description"><p>Garantisce il funzionamento di questi servizi al di fuori delle frontiere nazionali e assicura la stessa validità giuridica dei loro equivalenti cartacei.</p></div>
+                </div>
+              </div>
+                              </div>
+      </div>
+
+      </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--article-item-list.html.twig' -->
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--simple-text--default.html.twig
+   ✅ paragraph--simple-text.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--simple-text.html.twig' -->
+    
+    
+  <div data-themer-uuid="themer-0b4c598b-354d-4fb9-b8c4-48d48381ae57" class="paragraph paragraph--type--simple-text paragraph--view-mode--default padding_bottom_0 padding_bottom_0_mob component simple-text" style="">
+          
+      
+
+      <div class="content-wrapper">
+        
+                  <div class="description"><p>Partendo dalle basi del Regolamento,<strong> eIDAS 2.0</strong> ne perfeziona alcuni punti portando l'UE verso un panorama di identità digitali ancora più sicuro, incentrato sull'utente e inclusivo. Migliora l’efficienza del mercato interno, dei servizi transfrontalieri e intersettoriali e svolge un ruolo fondamentale per il raggiungimento degli obiettivi delineati nella Bussola digitale 2030.</p></div>
+              </div>
+      </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--simple-text.html.twig' -->
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--bookmark--default.html.twig
+   ✅ paragraph--bookmark.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--bookmark.html.twig' -->
+    <div class="paragraph paragraph--type--bookmark paragraph--view-mode--default component bookmark">
+                    
+
+          <div class="d-none">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-title--bookmark.html.twig
+   ▪️ field--paragraph--field-title.html.twig
+   ▪️ field--paragraph--bookmark.html.twig
+   ▪️ field--field-title.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><p>Come effettuare il login eIDAS</p>
+</div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+            </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--bookmark.html.twig' -->
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ paragraph--simple-text--default.html.twig
+   ✅ paragraph--simple-text.html.twig
+   ▪️ paragraph--default.html.twig
+   ▪️ paragraph.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--simple-text.html.twig' -->
+    
+    
+  <div data-themer-uuid="themer-a4d91e28-df61-4c99-aa52-c6279c7314e4" class="paragraph paragraph--type--simple-text paragraph--view-mode--default margin_top_10 margin_bottom_0 padding_bottom_0 margin_top_10_mob margin_bottom_0_mob padding_bottom_0_mob component simple-text" style="">
+          
+      
+
+      <div class="content-wrapper">
+                  <div class="title secondary">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-title--simple-text.html.twig
+   ▪️ field--paragraph--field-title.html.twig
+   ▪️ field--paragraph--simple-text.html.twig
+   ▪️ field--field-title.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><h2>Come effettuare il login eIDAS</h2></div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+        
+                  <div class="description">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-description--simple-text.html.twig
+   ▪️ field--paragraph--field-description.html.twig
+   ▪️ field--paragraph--simple-text.html.twig
+   ▪️ field--field-description.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-field-description field--type-text-long field--label-hidden field__item"><p>Riconoscere ed eseguire l’accesso con eIDAS è semplice: le Amministrazioni che consentono l’accesso ai propri servizi online con l’identità digitale, infatti, espongono un <strong>bottone con la dicitura standard in inglese “Login with eIDAS” in colore bianco su sfondo blu.</strong> Il testo è sempre accompagnato dal logo della bandiera europea. Un riconoscimento immediato per un login rapido e sicuro che permette di accedere ai servizi digitali.</p><p>&nbsp;</p>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--default.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--default.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/riconosci-login-eidas%201.svg" alt>
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+</div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+              </div>
+      </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--simple-text.html.twig' -->
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--entity-reference-revisions.html.twig' -->
+
+
+        </div>
+
+      </div>
+
+      </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/paragraphs/paragraph--index.html.twig' -->
+
+
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--entity-reference-revisions.html.twig' -->
+
+
+  </div>
+</article>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/nodes/node.html.twig' -->
+
+
+  </section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region.html.twig' -->
+
+
+          </section>
+        </main>
+          </div>
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ region--featured-bottom.html.twig
+   ▪️ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region--featured-bottom.html.twig' -->
+  <section class="region region-featured-bottom feedback-banner">
+    <div class="content-wrapper">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--agid-theme-scroll-top.html.twig
+   ▪️ block--entity-block--site-setting-entity.html.twig
+   ▪️ block--entity-block.html.twig
+   ▪️ block--entity-block.html.twig
+   ✅ block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+<div id="block-agid-theme-scroll-top">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'site_setting_entity' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ site-setting-entity--12--default.html.twig
+   ▪️ site-setting-entity--12.html.twig
+   ▪️ site-setting-entity--block-scroll--default.html.twig
+   ✅ site-setting-entity--block-scroll.html.twig
+   ▪️ site-setting-entity--default.html.twig
+   ▪️ site-setting-entity.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--block-scroll.html.twig' -->
+
+  <section class="site_setting_entity go-to-top">
+    <div class="button-container">
+      <a aria-label="Torna in cima" href="eidas-node.html#main-content" role="button"></a>
+    </div>
+  </section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--block-scroll.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+
+
+    </div>
+
+  </section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region--featured-bottom.html.twig' -->
+
+
+        <footer id="footer" class="footer">
+  <h2 class="visually-hidden">Informazioni a piè di pagina</h2>
+  <div class="content-wrapper">
+    <div class="top-part">
+      <div class="top-wrapper">
+        <a
+          href="eidas-node.html"
+          class="logo" aria-label="Vai alla homepage">
+          <img src="https://www.eid.gov.it/sites/agid/files/2024-06/Frame%201000015271.svg" alt="Logo Il nodo eiDAS italiano">
+        </a>
+      </div>
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ region--footer.html.twig
+   ▪️ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region--footer.html.twig' -->
+  <section class="region region-footer">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--agid-theme-site-block-contacts.html.twig
+   ▪️ block--entity-block--site-setting-entity.html.twig
+   ▪️ block--entity-block.html.twig
+   ▪️ block--entity-block.html.twig
+   ✅ block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+<div id="block-agid-theme-site-block-contacts">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'site_setting_entity' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ site-setting-entity--3--default.html.twig
+   ▪️ site-setting-entity--3.html.twig
+   ▪️ site-setting-entity--block-text--default.html.twig
+   ✅ site-setting-entity--block-text.html.twig
+   ▪️ site-setting-entity--default.html.twig
+   ▪️ site-setting-entity.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--block-text.html.twig' -->
+<div class="site_setting_entity block-text">
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--site-setting-entity--description--block-text.html.twig
+   ▪️ field--site-setting-entity--description.html.twig
+   ▪️ field--site-setting-entity--block-text.html.twig
+   ▪️ field--description.html.twig
+   ▪️ field--string.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-description field--type-string field--label-hidden field__item">CONTACTS</div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--site-setting-entity--field-description--block-text.html.twig
+   ▪️ field--site-setting-entity--field-description.html.twig
+   ▪️ field--site-setting-entity--block-text.html.twig
+   ▪️ field--field-description.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+      <div class="field field--name-field-description field--type-text-long field--label-hidden field__items">
+              <div class="field__item"><p>CONTATTI</p></div>
+              <div class="field__item"><p><a href="https://www.google.it/maps/place/Via+Liszt,+21,+00144+Roma+RM/@41.8336603,12.4652429,17z/data=!3m1!4b1!4m6!3m5!1s0x13258ae23382eb09:0x2566df27118199b!8m2!3d41.8336603!4d12.4678178!16s%2Fg%2F11kh72xdrr?entry=ttu" target="_blank" aria-label="Via Liszt 21 - 00144 Roma, apre Google Maps in una nuova scheda">Via Liszt 21 - 00144 Roma</a></p></div>
+              <div class="field__item"><p>Tel: <a href="tel:+39 (06) 8526 41">+39 (06) 8526 41</a></p></div>
+              <div class="field__item"><p aria-hidden="true">Codice fiscale: 97735020584</p><p><span class="sr-only">Codice fiscale: 97 73 50 20 58 4</span></p></div>
+              <div class="field__item"><p>PEC: <a href="mailto:protocollo@pec.agid.gov.it" aria-label="Apre il client di posta personale per inviare una mail a protocollo@pec.agid.gov.it">protocollo@pec.agid.gov.it</a></p></div>
+              <div class="field__item"><p>Email: <a href="mailto:direzione.generale@agid.gov.it" aria-label="Apre il client di posta personale per inviare una mail a direzione.generale@agid.gov.it">direzione.generale@agid.gov.it</a></p></div>
+              <div class="field__item"><p>&nbsp;</p><p>Per richieste tecniche inerenti il Nodo eIDAS e l’utilizzo del Login eIDAS contattare il supporto online nodo eIDAS:</p></div>
+              <div class="field__item"><p>Email: <a href="mailto:servicedeskeidas@agid.gov.it" aria-label="Apre il client di posta personale per inviare una mail a servicedeskeidas@agid.gov.it">servicedeskeidas@agid.gov.it</a></p></div>
+          </div>
+  
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--block-text.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--agid-theme-sitesetting.html.twig
+   ▪️ block--entity-block--site-setting-entity.html.twig
+   ▪️ block--entity-block.html.twig
+   ▪️ block--entity-block.html.twig
+   ✅ block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+<div id="block-agid-theme-sitesetting">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'site_setting_entity' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ site-setting-entity--4--default.html.twig
+   ▪️ site-setting-entity--4.html.twig
+   ▪️ site-setting-entity--block-text--default.html.twig
+   ✅ site-setting-entity--block-text.html.twig
+   ▪️ site-setting-entity--default.html.twig
+   ▪️ site-setting-entity.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--block-text.html.twig' -->
+<div class="site_setting_entity block-text">
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--site-setting-entity--description--block-text.html.twig
+   ▪️ field--site-setting-entity--description.html.twig
+   ▪️ field--site-setting-entity--block-text.html.twig
+   ▪️ field--description.html.twig
+   ▪️ field--string.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-description field--type-string field--label-hidden field__item">LINK UTILI</div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--site-setting-entity--field-description--block-text.html.twig
+   ▪️ field--site-setting-entity--field-description.html.twig
+   ▪️ field--site-setting-entity--block-text.html.twig
+   ▪️ field--field-description.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+      <div class="field field--name-field-description field--type-text-long field--label-hidden field__items">
+              <div class="field__item"><p>LINK UTILI</p></div>
+              <div class="field__item"><p><a href="https://www.spid.gov.it/" target="_blank">Conosci SPID?</a></p></div>
+          </div>
+  
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--block-text.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+
+
+  </section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region--footer.html.twig' -->
+
+
+    </div>
+  </div>
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ region--footer-sub-1.html.twig
+   ▪️ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region--footer-sub-1.html.twig' -->
+  <section class="region region-footer-sub-1 link-part">
+    <div class="content-wrapper">
+      <div class="link-wrapper">
+        <div class="links">
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--agid-theme-site-block-footer-links.html.twig
+   ▪️ block--entity-block--site-setting-entity.html.twig
+   ▪️ block--entity-block.html.twig
+   ▪️ block--entity-block.html.twig
+   ✅ block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+<div id="block-agid-theme-site-block-footer-links">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'site_setting_entity' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ site-setting-entity--5--default.html.twig
+   ▪️ site-setting-entity--5.html.twig
+   ▪️ site-setting-entity--block-text--default.html.twig
+   ✅ site-setting-entity--block-text.html.twig
+   ▪️ site-setting-entity--default.html.twig
+   ▪️ site-setting-entity.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--block-text.html.twig' -->
+<div class="site_setting_entity block-text">
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--site-setting-entity--description--block-text.html.twig
+   ▪️ field--site-setting-entity--description.html.twig
+   ▪️ field--site-setting-entity--block-text.html.twig
+   ▪️ field--description.html.twig
+   ▪️ field--string.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-description field--type-string field--label-hidden field__item">Footer Links</div>
+      
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--site-setting-entity--field-description--block-text.html.twig
+   ▪️ field--site-setting-entity--field-description.html.twig
+   ▪️ field--site-setting-entity--block-text.html.twig
+   ▪️ field--field-description.html.twig
+   ▪️ field--text-long.html.twig
+   ✅ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+      <div class="field field--name-field-description field--type-text-long field--label-hidden field__items">
+              <div class="field__item"><p><a href="https://www.eid.gov.it/note-legali">Note legali</a></p></div>
+              <div class="field__item"><p><a href="https://www.eid.gov.it/privacy-policy">Informativa sulla privacy</a></p></div>
+              <div class="field__item"><p><a href="https://form.agid.gov.it/view/37312340-a8cb-11f0-b75d-5daa4a097110">Dichiarazione Accessibilità</a></p></div>
+          </div>
+  
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
+
+</div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--block-text.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region--footer-sub-1.html.twig' -->
+
+
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   ✅ region--footer-sub-2.html.twig
+   ▪️ region.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region--footer-sub-2.html.twig' -->
+  <section class="region region-footer-sub-2">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ block--agid-theme-site-block-footer-sub-2.html.twig
+   ▪️ block--entity-block--site-setting-entity.html.twig
+   ▪️ block--entity-block.html.twig
+   ▪️ block--entity-block.html.twig
+   ✅ block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+<div id="block-agid-theme-site-block-footer-sub-2">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'site_setting_entity' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ site-setting-entity--14--default.html.twig
+   ▪️ site-setting-entity--14.html.twig
+   ▪️ site-setting-entity--logos--default.html.twig
+   ✅ site-setting-entity--logos.html.twig
+   ▪️ site-setting-entity--default.html.twig
+   ▪️ site-setting-entity.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--logos.html.twig' -->
+
+<div class="site_setting_entity bottom-part">
+  <div class="content-wrapper">
+                            <a class="link-clickable" href="https://www.agid.gov.it/it" target="_blank" aria-label="Apre il sito Agenzia per Italia Digitale in una nuova scheda">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--full.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--full.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/AgidSVG.svg" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+          </a>
+                                <a class="link-clickable" href="https://next-generation-eu.europa.eu/index_en" target="_blank" aria-label="Apre il sito next generation eu europa in una nuova scheda">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--full.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--full.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/finanziatoUE.svg" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+          </a>
+                                <a class="link-clickable" href="https://www.governo.it/it" target="_blank" aria-label="Apre il sito governo in una nuova scheda">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--full.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--full.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/GovernoItalianoSVG.svg" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+          </a>
+                                <a class="link-clickable" href="https://innovazione.gov.it/" target="_blank" aria-label="Apre il sito trasformazione digitale in una nuova scheda">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--full.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--full.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/trasformazioneDigitaleSVG.svg" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+          </a>
+                                <a class="link-clickable" href="https://europa.eu/youreurope/" target="_blank" aria-label="Apre il sito your europe in una nuova scheda">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'media' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ media--source-image.html.twig
+   ▪️ media--image--full.html.twig
+   ▪️ media--image.html.twig
+   ▪️ media--full.html.twig
+   ✅ media.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+<div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--media--field-media-image--image.html.twig
+   ▪️ field--media--field-media-image.html.twig
+   ▪️ field--media--image.html.twig
+   ✅ field--field-media-image.html.twig
+   ▪️ field--image.html.twig
+   ▪️ field.html.twig
+-->
+<!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+<div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+        <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img loading="lazy" src="https://www.eid.gov.it/sites/agid/files/2024-06/Your%20Europe_logo.svg" alt="" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+</div>
+        </div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field--field-media-image.html.twig' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+
+          </a>
+                    </div>
+</div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/site_settings/site-setting-entity--logos.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/block/templates/block.html.twig' -->
+
+
+  </section>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/regions/region--footer-sub-2.html.twig' -->
+
+
+</footer>
+
+  </div>
+</div>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/system/page.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"it\/","currentPath":"node\/1","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"it"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"user":{"uid":0,"permissionsHash":"41ca83bd6990afdb3d502ad43d8d940f543a8f701eedb6d1f335d96b27d7d224"}}</script>
+<script src="https://www.eid.gov.it/themes/agid_theme/lib/async_external_libraries.js?v=1"></script>
+<script src="https://www.eid.gov.it/sites/agid/files/languages/it_PmbV0hjcwJ6-kC3Y9n8fb8WHLYmZ81GS4FsyswhOuKU.js?tlgc0i"></script>
+<script src="https://www.eid.gov.it/core/misc/drupalSettingsLoader.js?v=10.6.10"></script>
+<script src="https://www.eid.gov.it/core/misc/drupal.js?v=10.6.10"></script>
+<script src="https://www.eid.gov.it/core/misc/drupal.init.js?v=10.6.10"></script>
+<script src="https://www.eid.gov.it/themes/agid_theme/lib/views-filters-enhancement.js?tlgc0i"></script>
+<script src="https://www.eid.gov.it/modules/custom/cactus_backend/static/js/global.js?v=1"></script>
+<script src="https://www.eid.gov.it/modules/custom/cactus_backend/static/js/translations.js?v=1"></script>
+<script src="https://www.eid.gov.it/modules/custom/cactus_backend/static/js/pager.js?tlgc0i"></script>
+<script src="https://www.eid.gov.it/core/assets/vendor/ckeditor5/ckeditor5-dll/ckeditor5-dll.js?v=47.6.0"></script>
+<script src="https://www.eid.gov.it/core/assets/vendor/ckeditor5/ckeditor5-dll/translations/it.js?v=47.6.0"></script>
+<script src="https://www.eid.gov.it/modules/contrib/ckeditor5_tags/js/lib/tags.lib.js?tlgc0i"></script>
+<script src="https://www.eid.gov.it/themes/agid_theme/app/dist/assets/main-KA2_-aJS.js?v=1" type="module"></script>
+<script src="https://www.eid.gov.it/themes/agid_theme/app/dist/bundle.vendor.min.js?v=1" rel="modulepreload"></script>
+<script src="https://www.eid.gov.it/modules/local/eid/assets/js/eid.main.js?v=1" type="module" defer async></script>
+
+
+    
+    
+  </body>
+</html>
+
+<!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/system/html.html.twig' -->
+
