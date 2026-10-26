@@ -1,0 +1,6 @@
+*.tmp
+*.log
+wget.exe
+fix_assets.py
+crawl_full_site.py
+mirror_site.py
