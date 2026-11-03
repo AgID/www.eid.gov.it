@@ -741,7 +741,7 @@
 -->
 <!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
 
-            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><h1>Enable eIDAS login</h1></div>
+            <div class="field field--name-field-title field--type-text-long field--label-hidden field__item"><h1>Enable eIDAS Login - Technical and Administrative Procedure</h1></div>
 
 <!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
 
@@ -982,7 +982,7 @@
 -->
 <!-- 💡 BEGIN CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
 
-            <div class="field field--name-field-description field--type-text-long field--label-hidden field__item"><p>The Italian eIDAS-Node operates as a virtual SPID Identity Provider (IdP), so the impact on the configuration activities of the service provider joining the SPID system is minimal. To activate the eIDAS login:</p></div>
+            <div class="field field--name-field-description field--type-text-long field--label-hidden field__item"><p>The Italian eIDAS Node operates within the SPID system as a virtual Identity Provider. For Service Providers already integrated with SPID, the technical activities required to enable cross-border access through eIDAS are therefore limited.</p><p>The federation procedure consists of two phases:</p><ol><li>Federation in the Quality Assurance (QA) environment.</li><li>Federation in the Production (PROD) environment.</li></ol><p>Requests and all communications related to the procedure must be sent exclusively to <strong>servicedeskeidas@agid.gov.it</strong> via standard email (PEO).</p></div>
 
 <!-- END CUSTOM TEMPLATE OUTPUT from 'themes/agid_theme/templates/fields/field.html.twig' -->
 
@@ -998,10 +998,10 @@
 
                   <div class="text-part">
                     <div class="title">
-                      <p>Submit the communication</p>
+                      <p>Request for Federation in the Quality Assurance (QA) Environment</p>
                     </div>
                     <div class="description">
-                      <p>Request federation in a Quality Assurance environment by sending an e-mail to <a href="mailto:servicedeskeidas@agid.gov.it" target="_blank" aria-label="Opens the personal mail client for sending mail to servicedeskeidas@agid.gov.it ">servicedeskeidas@agid.gov.it</a> with the following data:</p><ul><li>Name of the Organisation</li><li>URL of the metadata</li><li>URL of the page containing “Login with eIDAS”</li><li>Name, surname and email of the administrative contact person</li><li>Name, surname and email of the technical contact person</li><li>List of services with access via “Login with eIDAS”.</li></ul>
+                      <p>To start federation in the Quality Assurance environment, send an email with the following subject:</p><p><strong>QA Federation Request</strong> – Organization Name</p><p>The body of the email must contain only the information listed below (example values shown in italics):</p><p><strong>Organization Name</strong>: Example Organization</p><p><strong>Metadata URL</strong>: https://www.exampleorganization.it/metadata.xml</p><p><strong>"Login with eIDAS" Button URL</strong>: https://www.exampleorganization.it/online-services</p><p><strong>Administrative Contact</strong>: First Name, Last Name, admin.contact@exampleorganization.it</p><p><strong>Technical Contact: First</strong> Name, Last Name, tech.contact@exampleorganization.it</p><p><strong>List of Services:</strong></p><ul><li>Service Name 1: https://www.exampleorganization.it/service1</li><li>Service Name 2: https://www.exampleorganization.it/service2</li></ul>
                     </div>
                   </div>
                 </div>
@@ -1015,10 +1015,10 @@
 
                   <div class="text-part">
                     <div class="title">
-                      <p>Request federation in the production environment</p>
+                      <p>Request for Federation in the Production (PROD) Environment</p>
                     </div>
                     <div class="description">
-                      <p>Once the federation in the Quality Assurance environment has been completed, it is possible to request federation in the Production environment by sending an email to the same address, attaching a copy of the SPID membership agreement.</p>
+                      <p>Federation in the Production environment should preferably be requested after the successful completion of federation in the Quality Assurance environment.</p><p>To request federation in Production, send an email with the following subject:</p><p><strong>PROD Federation Request</strong> – Organization Name</p><p>The body of the email must contain only the information listed below (example values shown in italics):</p><p><strong>Organization Name</strong>: Example Organization</p><p><strong>Metadata URL</strong>: https://www.exampleorganization.it/metadata.xml</p><p><strong>"Login with eIDAS" Button URL</strong>: https://www.exampleorganization.it/online-services</p><p><strong>Administrative Contact</strong>: First Name, Last Name, admin.contact@exampleorganization.it</p><p><strong>Technical Contact</strong>: First Name, Last Name, tech.contact@exampleorganization.it</p><p><strong>List of Services</strong>:</p><ul><li>Service Name 1: https://www.exampleorganization.it/service1</li><li>Service Name 2: https://www.exampleorganization.it/service2</li></ul>
                     </div>
                   </div>
                 </div>
@@ -1143,7 +1143,7 @@
                       <p>Production</p>
                     </div>
                     <div class="description">
-                      <p>&nbsp;</p><table class="table"><tbody><tr><th><strong>Component</strong></th><td>SP-Proxy IDP-IT</td></tr><tr><th><strong>Metadata URL</strong></th><td><a href="https://sp-proxy.eid.gov.it/metadata" target="_blank" aria-label="https://sp-proxy.eid.gov.it/metadata opens in a new tab">https://sp-proxy.eid.gov.it/metadata</a></td></tr><tr><th><strong>Metadata Signing Certificate</strong></th><td><a href="https://www.eid.gov.it/sites/agid/files/2026-06/sp-proxy_eid_gov_it-metadata.pem%201.txt" target="_blank" aria-label="Downolad file Metadata Signing Certificate" download="">Metadata Signing Certificate OLD (current, expires Nov 1st)</a><br><br><a href="https://www.eid.gov.it/sites/agid/files/2026-10/SP_Proxy_SAML_Metadata_Signature.crt_.txt">Metadata Signing Certificate NEW (next, deploy Oct 29th)</a></td></tr><tr><th><strong>Certificate fingerprint</strong></th><td>SHA256 (OLD)<br><span>D6:21:19:7C:1A:80:C9:AA:E8:87:51:4E:40:BD:7B:3D:70:92:64:D2:98:3D:71:D9:62:CA:BF:A0:65:0C:75:C8 (current, expires Nov 1st)</span><br><br><span>SHA256 (NEW)</span><br><span>54a3e7c2c5bbad07da0415371a9a787c91e54f5cf429a67472b2249f600f220e (next, deploy Oct 29th)</span></td></tr></tbody></table>
+                      <p>&nbsp;</p><table class="table"><tbody><tr><th><strong>Component</strong></th><td>SP-Proxy</td></tr><tr><th><strong>Metadata URL</strong></th><td><a href="https://sp-proxy.eid.gov.it/metadata" target="_blank" aria-label="https://sp-proxy.eid.gov.it/metadata opens in a new tab">https://sp-proxy.eid.gov.it/metadata</a></td></tr><tr><th><strong>Metadata Signing Certificate</strong></th><td><a href="https://www.eid.gov.it/sites/agid/files/2026-10/SP_Proxy_SAML_Metadata_Signature.crt_.txt">Metadata Signing Certificate</a></td></tr><tr><th><strong>Certificate fingerprint</strong></th><td><span>SHA256</span><br><span>E7:FD:8A:19:FB:CE:B3:5F:21:50:DC:AC:B7:B9:36:6F:6F:13:44:30:15:E5:D9:EB:04:A9:F3:04:51:07:74:AB</span></td></tr></tbody></table>
                     </div>
                   </div>
                 </div>
@@ -1160,7 +1160,7 @@
                       <p>QA (Quality Assurance)</p>
                     </div>
                     <div class="description">
-                      <p>&nbsp;</p><table class="table"><tbody><tr><th><strong>Component</strong></th><td>SP-Proxy IDP-IT</td></tr><tr><th><strong>Metadata URL</strong></th><td><a href="https://sp-proxy.pre.eid.gov.it/spproxy/idpitmetadata" target="_blank" aria-label="https://sp-proxy.pre.eid.gov.it/spproxy/idpitmetadata opens in a new tab">https://sp-proxy.pre.eid.gov.it/spproxy/idpitmetadata</a></td></tr><tr><th><strong>Metadata Signing Certificate</strong></th><td><a href="https://www.eid.gov.it/sites/agid/files/2026-06/qa-sp-proxy_eid_gov_it-metadata.pem%201.txt" target="_blank" aria-label="Download file Metadata Signing Certificate" download="">Metadata Signing Certificate OLD (current, expires Nov 1st)</a><br><br><a href="https://www.eid.gov.it/sites/agid/files/2026-10/SP_Proxy_QA_SAML_Metadata_Signature.crt_.txt">Metadata Signing Certificate NEW (next, deploy Oct 29th)</a></td></tr><tr><th><strong>Certificate fingerprint</strong></th><td>SHA256 (OLD)<br><span>3C:C8:20:77:21:14:9D:23:52:2D:42:85:79:5B:D7:00:82:F3:03:43:2F:78:21:E0:46:79:43:87:94:A2:87:DC (current, expires Nov 1st)</span><br><br><span>SHA256 (NEW)</span><br><span>a9b0c44802ad5509ba0c20f8b37c5af4f9d0c9fce170a00204f792154abfa789 (next, deploy Oct 29th)</span></td></tr></tbody></table><p>&nbsp;</p><p>For the production environment, it is also possible to use the aggregated metadata of all the IdPs available at: <a href="https://registry.spid.gov.it/metadata/idp/spid-entities-idps.xml" aria-label="//registry.spid.gov.it/metadata/idp/spid-entities-idps.xml">https://registry.spid.gov.it/metadata/idp/spid-entities-idps.xml</a></p>
+                      <p>&nbsp;</p><table class="table"><tbody><tr><th><strong>Component</strong></th><td>SP-Proxy</td></tr><tr><th><strong>Metadata URL</strong></th><td><a href="https://sp-proxy.pre.eid.gov.it/spproxy/idpitmetadata" target="_blank" aria-label="https://sp-proxy.pre.eid.gov.it/spproxy/idpitmetadata opens in a new tab">https://sp-proxy.pre.eid.gov.it/spproxy/idpitmetadata</a></td></tr><tr><th><strong>Metadata Signing Certificate</strong></th><td><a href="https://www.eid.gov.it/sites/agid/files/2026-10/SP_Proxy_QA_SAML_Metadata_Signature.crt_.txt">Metadata Signing Certificate</a></td></tr><tr><th><strong>Certificate fingerprint</strong></th><td><span>SHA256</span><br><span>F1:EE:1B:34:83:15:19:E5:A9:E5:3A:77:5F:B6:BE:15:63:CA:0B:38:7D:CA:6B:41:7D:17:53:6B:F2:22:6A:AD</span></td></tr></tbody></table><p>&nbsp;</p><p>For the production environment, it is also possible to use the aggregated metadata of all the IdPs available at: <a href="https://registry.spid.gov.it/metadata/idp/spid-entities-idps.xml" aria-label="//registry.spid.gov.it/metadata/idp/spid-entities-idps.xml">https://registry.spid.gov.it/metadata/idp/spid-entities-idps.xml</a></p>
                     </div>
                   </div>
                 </div>
@@ -1285,7 +1285,7 @@
                       <p>Production</p>
                     </div>
                     <div class="description">
-                      <p>&nbsp;</p><table class="table"><tbody><tr><th><strong>Component</strong></th><td>SP-Proxy IDP-IT</td></tr><tr><th><strong>Metadata URL</strong></th><td><a href="https://idp-proxy.eid.gov.it/metadata" target="_blank" aria-label="https://idp-proxy.eid.gov.it/metadata opens in a new tab">https://idp-proxy.eid.gov.it/metadata</a></td></tr><tr><th><strong>Metadata Signing Certificate</strong></th><td><a href="https://www.eid.gov.it/sites/agid/files/2026-06/idp-proxy_eid_gov_it-metadata.pem%201.txt" target="_blank" aria-label="Downolad file  Metadata Signing Certificate" download="">Metadata Signing Certificate OLD (current, expires Nov 1st)</a><br><br><a href="https://www.eid.gov.it/sites/agid/files/2026-10/IDP_Proxy_SAML_Metadata_Signature.crt_.txt">Metadata Signing Certificate NEW (next, deploy Oct 29th)</a></td></tr><tr><th><strong>Certificate fingerprint</strong></th><td>SHA256 (OLD)<br><span>D6:38:1D:2A:DD:65:84:57:AB:01:56:76:30:5D:DE:A5:51:43:38:DD:A3:BE:D3:0A:84:BA:89:D4:21:DA:9B:91 (current, expires Nov 1st)</span><br><br><span>SHA256 (NEW)</span><br><span>cb7cb43ec27c0ee8858d3d202565ca6ad1731ebf492a383142904966a0420fef (next, deploy Oct 29th)</span></td></tr></tbody></table>
+                      <p>&nbsp;</p><table class="table"><tbody><tr><th><strong>Component</strong></th><td>IDP-Proxy</td></tr><tr><th><strong>Metadata URL</strong></th><td><a href="https://idp-proxy.eid.gov.it/metadata" target="_blank" aria-label="https://idp-proxy.eid.gov.it/metadata opens in a new tab">https://idp-proxy.eid.gov.it/metadata</a></td></tr><tr><th><strong>Metadata Signing Certificate</strong></th><td><a href="https://www.eid.gov.it/sites/agid/files/2026-10/IDP_Proxy_SAML_Metadata_Signature.crt_.txt">Metadata Signing Certificate</a></td></tr><tr><th><strong>Certificate fingerprint</strong></th><td><span>SHA256</span><br><span>14:45:7C:EE:E5:D3:EF:13:20:4D:45:27:EC:FB:31:9E:98:EA:87:55:40:A4:B4:34:66:7A:F0:64:45:DA:CF:D8</span></td></tr></tbody></table>
                     </div>
                   </div>
                 </div>
@@ -1302,7 +1302,7 @@
                       <p>QA (Quality Assurance)</p>
                     </div>
                     <div class="description">
-                      <p>&nbsp;</p><table class="table"><tbody><tr><th><strong>Component</strong></th><td>SP-Proxy IDP-IT</td></tr><tr><th><strong>Metadata URL</strong></th><td><a href="https://idp-proxy.pre.eid.gov.it/metadata" target="_blank" aria-label="https://idp-proxy.pre.eid.gov.it/metadata opens in a new tab">https://idp-proxy.pre.eid.gov.it/metadata</a></td></tr><tr><th><strong>Metadata Signing Certificate</strong></th><td><a href="https://www.eid.gov.it/sites/agid/files/2026-06/qa-idp-proxy_eid_gov_it-metadata.pem%201.txt" target="_blank" aria-label="Download file Metadata Signing Certificate" download="">Metadata Signing Certificate OLD (current, expires Nov 1st)</a><br><br><a href="https://www.eid.gov.it/sites/agid/files/2026-10/IDP_Proxy_QA_SAML_Metadata_Signature.crt_.txt">Metadata Signing Certificate NEW (next, deploy Oct 29th)</a></td></tr><tr><th><strong>Certificate fingerprint</strong></th><td>SHA256 (OLD)<br><span>C6:E6:F5:2D:DA:FE:C7:06:09:DE:F5:9E:39:67:96:A9:4C:33:30:34:21:7B:E0:74:A6:38:AD:E3:87:F3:06:22 (current, expires Nov 1st)</span><br><br><span>SHA256 (NEW)&nbsp;</span><br><span>2472791513cc93e5182a008f3eee97414bfbd0cbb7f59057bdb84367289a7c63 (next, deploy Oct 29th)</span></td></tr></tbody></table>
+                      <p>&nbsp;</p><table class="table"><tbody><tr><th><strong>Component</strong></th><td>IDP-Proxy</td></tr><tr><th><strong>Metadata URL</strong></th><td><a href="https://idp-proxy.pre.eid.gov.it/metadata" target="_blank" aria-label="https://idp-proxy.pre.eid.gov.it/metadata opens in a new tab">https://idp-proxy.pre.eid.gov.it/metadata</a></td></tr><tr><th><strong>Metadata Signing Certificate</strong></th><td><a href="https://www.eid.gov.it/sites/agid/files/2026-10/IDP_Proxy_QA_SAML_Metadata_Signature.crt_.txt">Metadata Signing Certificate</a></td></tr><tr><th><strong>Certificate fingerprint</strong></th><td><span>SHA256</span><br><span>DC:DC:27:18:C8:33:CA:38:6A:62:D4:07:35:35:8E:D6:8D:EB:8C:41:93:C4:5A:64:13:7D:B4:90:C6:F7:4C:34</span></td></tr></tbody></table>
                     </div>
                   </div>
                 </div>
